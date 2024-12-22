@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title></title>
+</head>
+<body>
+  <button type="button" class="scroll" onclick="location.href='#top_w'">^</button>
+    <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center link-body-emphasis text-decoration-none">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>
+          <span class="fs-4"><a href="/">Work inside and outside</a></span>
+        </a>
+  
+        <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+          <a class="py-2 link-body-emphasis text-decoration-none" href="/login">Login</a>
+          <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="/signup">Sign UP</a>
+          <a class="py-2 link-body-emphasis text-decoration-none" href="/resume">Resume</a>
+          <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="/work">Work</a>
+          <a class="py-2 link-body-emphasis text-decoration-none" href="/personal_traning">Personal_traning </a>
+        </nav>
+      </div>
+    
+    <div style="text-align: center;">
+    <h1 style="text-align: center;" id="top_w">Read and find your favorite work! </h1>
+    <P>There are many career options available, each with its unique benefits and opportunities.
+    <br>Whether you're passionate about technology, healthcare, education, or any other field, there's a profession that can match your skills and interests.
+    <br> That’s why we provide you with the chance to find the perfect job tailored just for you! 
+    </p>
+    </div>
+    <div class="row row-cols-1 row-cols-mg-2 row-cols-lg-4">
+      <div class ="col">
+        <div class ="card">
+          <img src="{{ url_for('static', filename='work/IT.png') }}" style="height: 180px;" >
+          <div class="card-body">
+            <h1 class="card-title">IT</h1>
+            <p class ="card-text">Working in IT encompasses designing, developing, and maintaining technology systems that solve complex problems and support business objectives</p>
+            <p><button type="button" class="btn btn-primary" onclick="location.href ='#It'">Find</button>
+              <select style="height: 30px; width: 150px; border-radius: 8px;">
+              <option value="">profession...</option>
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+          </select></p>
+            </div>
+        </div>
+      </div>
+      <div class ="col">
+        <div class ="card">
+          <img src="{{ url_for('static', filename='work/Social network.jpg') }}"  style="height: 180px;">
+          <div class="card-body">
+            <h1 class="card-title">Social network</h1>
+            <p class ="card-text">Social networks and the internet connect people worldwide, enabling communication, information sharing, and digital collaboration.</p>
+            <p><button type="button" class="btn btn-primary" onclick="location.href ='#Social'">Find</button>
+              <select style="height: 30px; width: 150px; border-radius: 8px;">
+              <option value="">profession...</option>
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+          </select></p>
+          </div>
+        </div>
+      </div>
+      <div class ="col">
+        <div class ="card">
+          <img src="{{ url_for('static', filename='work/Medicine.jpg') }}"  style="height: 180px;">
+
+          <div class="card-body">
+            <h1 class="card-title">Medicine</h1>
+            <p class ="card-text">Medicine is the field dedicated to diagnosing, treating, and preventing diseases to promote health and well-being.</p>
+            <p><button type="button" class="btn btn-primary" onclick="location.href ='#Medicine'">Find</button>
+              <select style="height: 30px; width: 150px; border-radius: 8px;">
+              <option value="">profession...</option>
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+          </select></p>
+          </div>
+        </div>
+      </div>
+      <div class ="col">
+        <div class ="card">
+          <img src="{{ url_for('static', filename='work/Science.jpg') }}" style="height: 180px;" >
+
+          <div class="card-body">
+            <h1 class="card-title">Science</h1>
+            <p class ="card-text">Working in science requires a combination of curiosity, analytical thinking, and the ability to solve complex problems through research.</p>
+            <p><button type="button" class="btn btn-primary" onclick="location.href ='#Science'">Find</button>
+              <select style="height: 30px; width: 150px; border-radius: 8px;">
+              <option value="">profession...</option>
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+          </select></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div>
+      <div class="row row-cols-1 row-cols-mg-2 row-cols-lg-4">
+        <div class ="col">
+          <div class ="card">
+            <img src="{{ url_for('static', filename='work/Pedagogy.jpg') }}" style="height: 180px;">
+
+            <div class="card-body">
+              <h1 class="card-title">Pedagogy</h1>
+              <p class ="card-text">
+                Working in pedagogy involves nurturing the intellectual and emotional development of learners by creating engaging and inclusive educational experiences.</p>
+              <p><button type="button" class="btn btn-primary" onclick="location.href ='#Pedagogy'">Find</button>
+                <select style="height: 30px; width: 150px; border-radius: 8px;">
+                <option value="">profession...</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select></p>
+            </div>
+          </div>
+        </div>
+        <div class ="col">
+          <div class ="card">
+            <img src="{{ url_for('static', filename='work/Architecture.jpg') }}"style="height: 180px;" >
+
+            <div class="card-body">
+              <h1 class="card-title">Architecture</h1>
+              <p class ="card-text">Their work involves creating detailed plans, collaborating with clients and engineers, and ensuring that the final construction meets both practical needs and creative visions.</p>
+              <p><button type="button" class="btn btn-primary" onclick="location.href ='#Architecture'">Find</button>
+                <select style="height: 30px; width: 150px; border-radius: 8px;">
+                <option value="">profession...</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select></p>
+            </div>
+          </div>
+        </div>
+        <div class ="col">
+          <div class ="card">
+            <img src="{{ url_for('static', filename='work/Technique.jpg') }}" style="height: 180px;">
+            <div class="card-body">
+              <h1 class="card-title">Technique</h1>
+              <p class ="card-text">Architects employ various techniques, such as 3D modeling, hand sketching, and material analysis, to bring their design concepts to life and ensure structural feasibility.</p>
+              <p><button type="button" class="btn btn-primary" onclick="location.href ='#Technique'">Find</button>
+                <select style="height: 30px; width: 150px; border-radius: 8px;">
+                <option value="">profession...</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select></p>
+            </div>
+          </div>
+        </div>
+        <div class ="col">
+          <div class ="card">
+            <img src="{{ url_for('static', filename='work/Jurisprudence.jpg') }}" style="height: 180px;">
+            <div class="card-body">
+              <h1 class="card-title">Jurisprudence</h1>
+              <p class ="card-text">Working in jurisprudence involves interpreting and applying laws to protect individual rights, resolve disputes, and ensure justice within society.</p>
+              <p><button type="button" class="btn btn-primary" onclick="location.href ='#Jurisprudence'">Find</button>
+                <select style="height: 30px; width: 150px; border-radius: 8px;">
+                <option value="">profession...</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    
+  <div class="text-select" style="padding-left: 1%;">
+    <div style="text-align: center; font-size: 3;" id="It"><h1>IT, telecommunications, and communication</h1></div>
+    <p>IT, telecommunications, and communication are promising and dynamic industries that are currently attracting the attention of most entrepreneurs. This is not surprising, as many consider these fields to be "sectors of the future," which is why investments are already being made to develop them.</p>
+    <p>Experts claim that humanity is currently on the brink of a technological revolution, which will be driven by professionals in the IT and telecommunications sectors. The internet and mobile communications, new methods of information encryption, and programming in industries such as healthcare and banking are just a few of the fields where these specialists are already working.</p>
+    <p>Advantages of working in IT, Telecommunications, and Communication:</p> 
+    
+    <p>High-paying professions, with employers actively seeking these professionals.</p>
+  <ul>
+    <ul>
+    <li>The opportunity to work both in an office and remotely.</li>
+    <li>Highly demanded specialties in most countries around the world.</li>
+    <li>Opportunities for professional development and expanding business contacts.</li>
+    </ul>
+  </ul>
+    <p>Risks of the profession:</p> 
+
+  <ul>
+    <ul>
+    <li>The need to constantly "keep up with the times," engage in self-education, and "stay on the pulse."</il>
+    <li>Sedentary work.</il>
+    <li>Work in "field conditions" (for employees in the communications and telecommunications sectors).</il>
+    <li>Irregular working hours.</il>
+  </ul>
+</ul>
+</div> 
+  <hr style="height: 5px; width: max-width; background-color: rgb(255, 0, 0);">
+
+  
+  <div style="text-align: center;" id="Social"><h2 >Social networks and internet</h2></div>
+  <div class="text-select">
+
+    <div class="block-left">
+    <p>Today, working on the Internet attracts more and more job seekers. The opportunity to work remotely, plan your work schedule independently, and earn high fees is undoubtedly appealing.</p>
+    <p>Internet professions include a wide range of fields, one of which is working with social media. </p>
+    <p> Social media today is an integral part of nearly everyone’s life. Some people use it for entertainment, while others have learned to earn money through it.</p>
+    <p>There are more than 20 social media platforms worldwide, and each country has its favorites. In Ukraine, the most popular social networks are Facebook, YouTube, Instagram, and Telegram. It would also be fair to add the Chinese social network TikTok to this list, as it is wildly popular among the youth of Ukraine and the rest of the world.</p>
+    <p>AR mask developers on Instagram, YouTube bloggers, Stories makers, and TikTokers are just a few of the professions in social media that have emerged relatively recently and are directly connected to one of the aforementioned social media platforms. Each of these professions requires specific skills and abilities from job seekers. Photography and video recording, writing texts, creating designs, acting skills, and producer talents – all of these are professional requirements necessary to master a particular profession related to social media. Here, everyone can choose a direction that suits them best.</p>
+    </div>
+  </div>
+  
+    <div class="block-right">
+    <ul style = 'list-style-image: url("yea.png");'>
+      <li><select style="height: 40px; width: 150px;">
+        <option value="">Choose...</option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+    </select></li>
+      <p><li>SMM Specialist (SMM Manager)</li></p>
+      <p><li>Social Media Administrator</li></p>
+      <p><li>Videoblogger (Vlogger)</li></p>
+      <p><li>Manager</li></p>
+      <p><li>Copywriter</li></p> 
+      <p><li>Story Maker (Stories Creator)</li> </p>
+      <li>PICTURE</li>
+    </ul>
+  </div>
+    <hr style="height: 5px; width: max-width; background-color: rgb(255, 0, 0);">
+    <div style="text-align: center;" id ="Medicine"><h2>Medicine</h2></div>
+    
+  <div class = 'text-select'>
+    <div class="block-left">
+      Medicine is a unique field whose workers are always in demand. This is not surprising, as diseases are constant companions of humans, and doctors and medical staff are professionals who help people overcome ailments. Thanks to their special knowledge and skills, doctors have long enjoyed respect and honor in society. Today, the situation has changed very little, and medical professionals are needed both in the public healthcare system and in private clinics, laboratories, and research institutes. Moreover, quite often, domestic medical professionals are invited to work abroad, where they are usually offered favorable working conditions and very good salaries.
+      <p>In modern times, there is a large number of medical profiles: doctors, surgeons, diagnosticians, narrow-specialized specialists, and laboratory assistants – all of these are medical professions that are equally important and needed in contemporary medicine. Of course, some of these roles are more prestigious, more responsible, and higher-paying. However, regardless of the prestige of a particular medical specialty, a true professional will always be needed, in demand, and respected among the population. The success of a medical professional can also depend on personal qualities, positive feedback from patients, their recommendations, and reputation in professional circles. That is why, when planning to enroll in a medical university, it is very important to make the right choice of specialty, to align it with your personal character traits, and to understand and accept the idea that this medical profession will require a lifelong commitment</p>
+      <p>Like most fields, medicine is developing in step with scientific and technological progress. Nanotechnology, molecular biology, robotics, IT, and programming are all industries whose advancements are actively being implemented in medicine. It is clear that such modern innovations require the involvement of specially trained specialists. This is why medical professions such as IT medic, biotechnologist, transplant specialist, medical marketer, molecular dietitian, biotech specialist, and nanospecialist, among others, are gaining popularity today.</p>
+    </div>
+  
+    <div class = "block-right">
+      <ul>
+        <li>Picture</li>
+      </ul>
+      <button type="button" style="appearance: none; color: aliceblue; background-color: deepskyblue; border-radius: 8px;" href="/signup" >Sign up to read</button> 
+    </div>
+  </div>
+  <hr style="height: 5px; width: max-width; background-color: blue;">
+  <h1>PICTURE</h1>
+  <hr style="height: 5px; width: max-width; background-color: blue;">
+<div class="text-select" id="Science">
+  <h2 style="text-align: center;">Science</h2>
+  <div style="padding-left: 1%;">
+  <p>A Candidate of Sciences, Professor, and Researcher are all titles that can be achieved for accomplishments in the field of science. Many specialists choose to dedicate their lives to scientific activity, aiming to make a significant contribution to its development. For recent university graduates, a scientific career is also attractive because of opportunities for international travel, the possibility of receiving various awards and grants, expanding their network of professional contacts, and more.</p>
+  <p>
+    A Candidate of Sciences, Professor, and Researcher are all titles that can be achieved for accomplishments in the field of science. Many specialists choose to dedicate their lives to scientific activity, aiming to make a significant contribution to its development. For recent university graduates, a scientific career is also attractive because of opportunities for international travel, the possibility of receiving various awards and grants, expanding their network of professional contacts, and more.
+    
+    It is clear that the future specialties of scientists are determined by the professions they obtained at universities. In other words, a certified lawyer can work only in the field of legal science, a doctor in medical science, and a teacher in pedagogical science. To make it easier for scientists to gain recognition abroad, our country has introduced the opportunity to earn a European-style academic degree – Doctor of Philosophy or Ph.D.</p>
+
+  <h5>Advantages of working in science:</h5>
+    <ul>
+      <ul>
+        <li>The ability to make a useful discovery for humanity;</li>
+        <li>Interesting work related to research and discoveries;</li>
+        <li>Various awards, competitions, and grants</li>
+        <li>The ability to combine scientific activity with teaching;</li>
+        <li>Travel and expanding professional networks;</li>
+
+      </ul>
+    </ul>
+  
+    
+  <p>Needless to say, modern science is often the "engine" of progress for most industrial sectors. This is not surprising, as many technological breakthroughs result from well-conducted research work. This is why scientific professions in biology, medicine, physics, and chemistry are particularly popular not only in our country but worldwide.</p>
+
+  </div>
+  </div>
+  <div class="container">
+  <div class="row row-cols-1 row-cols-mg-2 row-cols-lg-4">
+    <div class ="col">
+      <h5>Fields of science</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2">Anthropologist</li>
+        <li class="nav-item mb-2">Archaeologist</li>
+        <li class="nav-item mb-2">Astronomer </li>
+        <li class="nav-item mb-2">Bioengineer </li>
+        <li class="nav-item mb-2">Gemologist </li>
+      </ul>
+    </div>
+  
+    <div class ="col">
+      <h5>Fields of science</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2">Oceanologist </li>
+        <li class="nav-item mb-2">Psychologist </li>
+        <li class="nav-item mb-2">Sociologist </li>
+        <li class="nav-item mb-2">Philologist </li>
+        <li class="nav-item mb-2">Philosopher </li>
+      </ul>
+    </div>
+  
+    <div class ="col">
+    <h5>Fields of science</h5>
+    <ul class="nav flex-column">
+      <li class="nav-item mb-2">Geneticist </li>
+      <li class="nav-item mb-2">Geologist </li>
+      <li class="nav-item mb-2">Gestalt Therapist</li>
+      <li class="nav-item mb-2">Hydrologist </li>
+      <li class="nav-item mb-2">Cartographer </li>
+    </ul>
+    </div>
+    <div class ="col">
+    <h5>Fields of science</h5>
+    <ul class="nav flex-column">
+      <li class="nav-item mb-2">Linguist </li>
+      <li class="nav-item mb-2">Mathematician</li>
+      <li class="nav-item mb-2">Meteorologist </li>
+      <li class="nav-item mb-2">Microbiologist </li>
+      <li class="nav-item mb-2">Nanotechnologist </li>
+    </ul>
+    </div>
+  </div>
+</div>
+  <div style="text-align: center;" id="Pedagogy"><h2 >Pedagogy</h2></div>
+  <div class = "text-select" style="padding-left: 1%;">
+  <p>Teaching professions encompass specialties related to education, upbringing, and the development of personal and professional qualities. Preschool, school, and higher education, as well as training, creative, and sports programs, are all areas where modern educators work.</p>
+  <p>When discussing teaching professionals, we primarily refer to school teachers and preschool educators. Today, this category also includes specialists working with children with special needs, university lecturers, business trainers, coaches, private tutors, and more.</p>
+  <p>In many cases, individuals in our country pursue teaching careers out of passion, despite the profession historically being undervalued financially. However, the situation has improved: teacher salaries have increased, opportunities for additional income have emerged, and demand for private tutors has grown.</p>
+  <div style="text-align: center;">
+  <div class="row row-cols-1 row-cols-mg-2 row-cols-lg-3">
+  <div class ="col">
+  <p>Advantages of being a teacher:</p>
+  <ul>
+      <ul>
+        <li>A noble profession.</li>
+        <li>Competitive pay and benefits.</li>
+        <li>Extended summer vacations (for education sector workers).</li>
+        <li>Many opportunities for supplementary income.</li>
+      </ul>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>PICTURE</h1>
+  </div>
+  <div class = "col">
+  <p>Disadvantages of being a teacher:</p>
+  <ul>
+      <ul>
+        <li>High levels of responsibility.</li>
+        <li>Competitive pay and benefits.</li>
+        <li>Irregular working hours (grading papers, lesson planning, etc.).</li>
+        <li>Work under constant pressure and stress.</li>
+      </ul>
+    </ul>
+  </div>
+  </div>
+  </div>
+</div>
+
+<div class = "text-select">
+<h2 style="text-align: center;" id="Architecture">Architecture</h2>
+<p>Construction professions are perhaps among the most in-demand jobs for men in the labor market. This is not surprising, as the construction industry is currently developing dynamically: new residential buildings, industrial complexes, bridges, roads, and other structures are being built.</p>
+<p>Moreover, professional builders are always in demand, not only in our country but also abroad. That is why foreign companies often attract our compatriots by offering good salaries, free housing and meals, and, in some cases, social benefits. To secure such a job, it is desirable for a builder to have a relevant education and at least basic knowledge of English. However, it is also possible to find work abroad, just as in our country, without specialized knowledge. For this, there are auxiliary professions that can be learned directly on-site while working in construction.</p>
+<div class="text-select">
+  <div class="container">
+    <div class=" row row-cols-1 row-cols mg-2 row-cols-lg-2">
+      <div class="col">
+          <p>Advantages of construction professions</p>
+          <ul>
+            <li>Constant demand in the labor market;</li>
+            <li>Competitive wages;</li>
+            <li>Opportunity to learn the trade without specialized education;</li>
+            <li>Prospects for employment abroad.</li>
+          </ul>
+
+      </div>
+      <div class="col">
+          <p>Risks of the profession:</p>
+          <ul>
+            <li>Heavy physical labor (manual jobs);</li>
+            <li>High responsibility (engineering roles);</li>
+            <li>Risk of injury.</li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<p>History provides many examples of ordinary builders later becoming renowned architects or engineers. Therefore, for those who aspire to build a career in construction and aim to hold leadership positions in the future, obtaining a specialized higher education from a relevant institution is essential.</p>
+</div>
+
+<div class="text-select">
+<div class = "block-left">
+<h2 style="text-align: center;" id="Technique">Technique</h2>
+<p>Technical professions involve working with technology, including its development, operation, maintenance, and repair. Today, technical specialists are essential in nearly every industry that relies on technological tools. Engineers, operators, mechanics, technicians, electricians, and electronics specialists represent traditionally male-dominated roles that remain consistently in demand in the job market.</p>
+
+<div class = "row row-cols-1 row-cols-lg-2">
+  <div class = "col">
+    <p>Advantages of working in the technical field:</p>
+    <ul>
+      <ul>
+        <li>High-demand professions.</li>
+        <li>Competitive salaries.</li>
+        <li>Opportunities for side jobs during free time.</li>
+      </ul>
+    </ul>
+  </div>
+  <div class = "col">
+    <p>Risks of the profession:</p>
+    <ul>
+      <ul>
+        <li>Personal responsibility for the quality of work.</li>
+        <li>Potential for injury.</li>
+      </ul>
+    </ul>
+  </div>
+</div>
+<p>Technical professions are often considered an excellent career choice for young men after completing the 9th grade, as they typically don’t require advanced academic skills to start. Gaining a technical qualification not only provides access to a good job but also helps individuals discover their future interests. After gaining experience, junior technical specialists can pursue further education in specialized universities to become qualified engineers, mechanics, or technologists.</p>
+</div>
+<div class ="block-right_v2">
+  <ul style="list-style: none;">
+    <p><li><img src="{{ url_for('static', filename='inform_w/Technique1.jpg') }}" style="height: 150px; width: 235px;"></li></p>
+    <p><li><img src="{{ url_for('static', filename='inform_w/Technique2.jpg') }}" style="height: 150px; width: 235px;"></li></p>
+    <p><li><img src="{{ url_for('static', filename='inform_w/Technique3.jpg') }}" style="height: 150px; width: 235px;"></li></p>
+  </ul>
+</div>
+
+<div style="text-align: center;" id="Jurisprudence"><h2 >Jurisprudence</h2></div>
+<div class="text-select" style="padding: 1%;">
+<p>Jurisprudence is one of the most prestigious fields of study in many countries worldwide. This comes as no surprise, as professionals with legal education not only command respect in society but also earn competitive salaries, cultivate extensive networks of business contacts, and have opportunities to build political careers.</p>
+<p>When discussing legal professions, many people commonly think of roles in law enforcement, the judicial system, or legal advocacy. However, professional lawyers are also in high demand in government administration, diplomatic services, human rights organizations, the social sector, and more.</p>
+<p>It goes without saying that in addition to high qualifications, certified lawyers are expected to possess honesty, competence, resilience, and a strong commitment to upholding the letter of the law. Clearly, professionals with such a combination of skills and personal qualities will always be sought after in the job market, both within their home country and abroad.</p>
+<div class="text-select">
+  <div class="container">
+    <div class=" row row-cols-1 row-cols mg-2 row-cols-lg-2">
+      <div class="col">
+          <p>Advantages of construction professions</p>
+          <ul>
+            <li>Prestige;</li>
+            <li>High salary;</li>
+            <li>Extensive network of business contacts;</li>
+            <li>Opportunities to receive state awards and bonuses;</li>
+            <li>Professional benefits and social security packages;</li>
+            <li>Generous pension benefits.</li>
+          </ul>
+      </div>
+      <div class="col">
+          <p>Risks of the profession:</p>
+          <ul>
+            <li>Working under constant stress</li>
+            <li>Irregular working hours;</li>
+            <li>Risk to life (for law enforcement officers).
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<p>In addition, law is a relatively versatile profession. A qualified lawyer, upon graduation, can choose to work as a government employee, a law enforcement officer, or a private specialist, depending on their preferences.</p>
+</div>
+</body>
+</html>

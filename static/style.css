@@ -1,0 +1,98 @@
+
+.login-size-reg{
+    padding-right: 6.5%;
+}
+.password-size-reg{
+    padding-right: 4.5%;
+}
+.login-size-log{
+    padding-right: 10%;
+}
+.checkbox-grid {
+    
+    display: grid;
+    grid-template-columns: repeat(8, 5fr);
+    gap: 10px;
+}
+.container {
+    width: 100%;
+    max-width: 1024px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.block-left{
+    width: 80%;
+    
+    padding-left: 1%;
+    overflow:auto;
+    float:left;
+}
+.block-right{
+    width:20%;
+    height:700px;
+    overflow:auto;
+    float: right;
+    border-left: rgb(20, 4, 2);
+}
+
+.block-right_v2{
+    width:20%;
+    height:550px;
+    overflow:auto;
+    float: right;
+    border-left: rgb(20, 4, 2);
+}
+.text-select{
+    font-size: 22px;
+}
+.vertical-line{
+    border-left: 6px solid white;
+    height: 420px;
+    position: absolute;
+    left: 50%;
+    margin-left: -4px;
+    top: 60px
+}
+.scroll{
+  font-size: 30px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+  height: 15px;
+  border: none;
+  outline: none;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  padding-bottom: 40px;
+}
+
+.image{
+    width: 270;
+    height: 180;
+}
+.links-style1{
+    background-color: purple;
+    color: wheat;
+    appearance: none;
+    border-radius: 7px;
+    font-size: 30px;
+}
+.links-style2{
+    background-color: crimson;
+    color: wheat;
+    appearance: none;
+    border-radius: 7px;
+    font-size: 30px;
+}
+
+.links-style3{
+    background-color:green ;
+    color: wheat;
+    appearance: none;
+    border-radius: 7px;
+    font-size:30px;
+}
